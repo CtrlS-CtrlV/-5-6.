@@ -1,0 +1,8 @@
+<form method="post">
+    <input name="name" placeholder="Ім'я">
+    <button type="submit">OK</button>
+</form>
+
+{% for msg in get_flashed_messages() %}
+<p>{{ msg }}</p>
+{% endfor %}
