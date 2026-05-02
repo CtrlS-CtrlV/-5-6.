@@ -1,0 +1,9 @@
+<form method="post">
+    {% csrf_token %}
+    <input name="name" placeholder="Ім'я">
+    <button type="submit">OK</button>
+</form>
+
+{% for message in messages %}
+<p>{{ message }}</p>
+{% endfor %}
